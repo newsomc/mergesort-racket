@@ -1,11 +1,14 @@
 ## Merge sort - Racket
 Racket wizard [Bill Abresch](http://github.com/wija) and I implemented a version of Merge sort in Racket. 
 
-Some notes:
 
 1. <strong>merge-sort-racket-vectors.rkt</strong> was implemnted using native Racket vector functions to access and write data. Short, simple, and the fastest of all our attempts.
 2. <strong>merge-sort-structs-and-special-casing.rkt</strong>. This version uses Racket structs to manage subvectors as well as special casing for subvectors of length 1, 2 and 3. The second fastest.
 3. <strong>merge-sort-custom-subvectors.rkt</strong> An early try. Shows how to use functions to create subvector indeces from a single input vector. 
+
+## Todo:
+* Dip down to insert sort after we see a pattern of 16 items
+* Clarify which optimizations made sense, and which did not.
 
 ## Data
 
